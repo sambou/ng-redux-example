@@ -2,7 +2,7 @@
   "name": "ng-redux-example",
   "version": "0.0.1",
   "description": "Using redux in Angular1.x apps. Maintain app state and your sanity.",
-  "repository": "",
+  "repository": "https://github.com/sambou/ng-redux-example.git",
   "main": "index.js",
   "scripts": {
     "prestart": "rm -rf target",
