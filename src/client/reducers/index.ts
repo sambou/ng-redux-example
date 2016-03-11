@@ -1,7 +1,8 @@
 import { LOADING_REPOS, LOADED_REPOS, ERROR_LOADING_REPOS } from '../actions/index.ts';
 
 let initialState = {
-  sampleText: []
+  loading: false,
+  repos: []
 };
 
 let appReducer = (state = initialState, action) => {
