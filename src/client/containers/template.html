@@ -1,0 +1,16 @@
+<button ng-click="ctrl.loadGitHubRepos()">Click for some GitHub repos!</button>
+<table class="table" ng-if="ctrl.loading === false && ctrl.repos.length > 0">
+  <thead>
+    <td>id</td>
+    <td>name</td>
+    <td>url</td>
+  </thead>
+  <tbody>
+    <tr ng-repeat="repo in ctrl.repos">
+      <td>{{repo.id}}</td>
+      <td>{{repo.name}}</td>
+      <td><a ng-href="{{repo.url}}">{{repo.url}}</a>
+    </tr>
+  </tbody\>
+</table>
+<p ng-if="ctrl.loading">Loading...</p>

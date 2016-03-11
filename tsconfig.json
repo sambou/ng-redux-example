@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "filesGlob": [
+    "./webpack/webpack.development.config.js",
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+    "!./node_modules/**/*.ts",
+    "./typings/main.d.ts"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "noEmitOnError": true,
+    "module": "commonjs",
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "files": [
+    "./webpack/webpack.development.config.js",
+    "./src/client/actions/action.ts",
+    "./src/client/actions/index.ts",
+    "./src/client/containers/main-container.ts",
+    "./src/client/containers/main-controller.ts",
+    "./src/client/index.ts",
+    "./src/client/middleware/logger.ts",
+    "./src/client/reducers/index.ts",
+    "./src/client/store/index.ts",
+    "./src/server/index.ts",
+    "./typings/main.d.ts"
+  ],
+  "exclude": [],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
